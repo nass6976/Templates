@@ -14,7 +14,8 @@
       "host": "_dmarc",
       "data": "%dmarc_policy%",
       "ttl": 3600,
-      "txtConflictMatchingMode": "Prefix"
+      "txtConflictMatchingMode": "Prefix",
+      "key": "v=DMARC1"
     }
   ]
 }
