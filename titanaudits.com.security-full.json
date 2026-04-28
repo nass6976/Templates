@@ -13,19 +13,22 @@
       "type": "TXT",
       "host": "_dmarc",
       "data": "%dmarc_policy%",
-      "ttl": 3600
+      "ttl": 3600,
+      "txtConflictMatchingMode": "Prefix"
     },
     {
       "type": "TXT",
       "host": "_smtp._tls",
       "data": "%tls_policy%",
-      "ttl": 3600
+      "ttl": 3600,
+      "txtConflictMatchingMode": "Prefix"
     },
     {
       "type": "TXT",
       "host": "@",
       "data": "%spf_record%",
-      "ttl": 3600
+      "ttl": 3600,
+      "txtConflictMatchingMode": "Prefix"
     }
   ]
 }
