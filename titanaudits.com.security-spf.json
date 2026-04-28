@@ -14,14 +14,16 @@
       "host": "_dmarc",
       "data": "%dmarc_policy%",
       "ttl": 3600,
-      "txtConflictMatchingMode": "Prefix"
+      "txtConflictMatchingMode": "Prefix",
+      "key": "v=DMARC1"
     },
     {
       "type": "TXT",
       "host": "@",
       "data": "%spf_record%",
       "ttl": 3600,
-      "txtConflictMatchingMode": "Prefix"
+      "txtConflictMatchingMode": "Prefix",
+      "key": "v=spf1"
     }
   ]
 }
