@@ -8,6 +8,18 @@
   "syncRedirectDomain": "titanaudits.com",
   "syncPubKeyDomain": "domainconnect.titanaudits.com",
   "description": "Automatically configures DMARC and SPF to protect your domain from spoofing and improve deliverability.",
+  "variables": [
+    {
+      "name": "dmarc_policy",
+      "type": "string",
+      "description": "Dynamic DMARC policy"
+    },
+    {
+      "name": "spf_record",
+      "type": "string",
+      "description": "Dynamic SPF includes"
+    }
+  ],
   "records": [
     {
       "type": "TXT",
@@ -18,12 +30,9 @@
       "key": "v=DMARC1"
     },
     {
-      "type": "TXT",
+      "type": "SPFM",
       "host": "@",
-      "data": "%spf_record%",
-      "ttl": 3600,
-      "txtConflictMatchingMode": "Prefix",
-      "key": "v=spf1"
+      "spfRules": "%spf_record%"
     }
   ]
 }
