@@ -8,6 +8,13 @@
   "syncRedirectDomain": "titanaudits.com",
   "syncPubKeyDomain": "domainconnect.titanaudits.com",
   "description": "Automatically configures DMARC to protect your domain from spoofing and improve deliverability.",
+  "variables": [
+    {
+      "name": "dmarc_policy",
+      "type": "string",
+      "description": "Dynamic DMARC policy"
+    }
+  ],
   "records": [
     {
       "type": "TXT",
