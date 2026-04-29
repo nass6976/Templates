@@ -15,7 +15,7 @@
       "data": "%dmarc_policy%",
       "ttl": 3600,
       "txtConflictMatchingMode": "Prefix",
-      "key": "v=DMARC1"
+      "txtConflictMatchingPrefix": "v=DMARC1"
     },
     {
       "type": "SPFM",
@@ -24,5 +24,4 @@
     }
   ]
 }
-
 
