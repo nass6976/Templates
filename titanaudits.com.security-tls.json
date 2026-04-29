@@ -15,7 +15,7 @@
       "data": "%dmarc_policy%",
       "ttl": 3600,
       "txtConflictMatchingMode": "Prefix",
-      "key": "v=DMARC1"
+      "txtConflictMatchingPrefix": "v=DMARC1"
     },
     {
       "type": "TXT",
@@ -23,9 +23,8 @@
       "data": "%tls_policy%",
       "ttl": 3600,
       "txtConflictMatchingMode": "Prefix",
-      "key": "v=TLSRPTv1"
+      "txtConflictMatchingPrefix": "v=TLSRPTv1"
     }
   ]
 }
-
 
